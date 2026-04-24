@@ -1,0 +1,104 @@
+{
+  "arena": {
+    "width": 10.0,
+    "height": 10.0,
+    "forceSquare": true,
+    "sizeScale": 0.75,
+    "wallThickness": 0.5,
+    "wallBounciness": 1.5,
+    "marbleBounciness": 2.0
+  },
+  "rules": {
+    "maxBattleSeconds": 75.0,
+    "restartDelaySeconds": 3.0,
+    "autoRestart": false,
+    "showDebugHud": true,
+    "speedBoostCriticalSeconds": 15.0,
+    "maxExtraSpeedPercentAtCritical": 200.0
+  },
+  "marbles": [
+    {
+      "id": "red",
+      "displayName": "Ruby",
+      "colorHex": "#E14B4B",
+      "radius": 0.4,
+      "maxHealth": 120.0,
+      "speed": 4.0,
+      "turnRateDegreesPerSecond": 38.0,
+      "turnRateJitter": 16.0,
+      "turnRateJitterInterval": 1.15,
+      "collisionDamage": 0.0,
+      "missingHealthToBonusPercentPerPoint": 0.2,
+      "hasteMultiplier": 1.8,
+      "hasteDuration": 1.3,
+      "abilities": [
+        {
+          "type": "TrailCircles",
+          "name": "Hazard Trail",
+          "power": 4.0,
+          "baseCooldown": 0.3,
+          "randomJitter": 0.12,     
+          "trailRadius": 0.14,
+          "trailLifetime": 10.0,
+          "maxActiveTrailCircles": 20
+        }
+      ]
+    },
+    {
+      "id": "blue",
+      "displayName": "Azure",
+      "colorHex": "#4B75E1",
+      "radius": 0.4,
+      "maxHealth": 130.0,
+      "speed": 4.5,
+      "turnRateDegreesPerSecond": 100.0,
+      "turnRateJitter": 14.0,
+      "turnRateJitterInterval": 1.05,
+      "collisionDamage": 0.0,
+      "missingHealthToBonusPercentPerPoint": 0.95,
+      "hasteMultiplier": 1.75,
+      "hasteDuration": 1.3,
+      "abilities": [
+        {
+          "type": "SideRectangles",
+          "name": "Twin Side Blades",
+          "power": 11.0,
+          "sizeX": 1.45,
+          "sizeY": 0.20,
+          "sideOffset": 0.0
+        }
+      ]
+    },
+    {
+      "id": "green",
+      "displayName": "Verdant",
+      "colorHex": "#33B56A",
+      "radius": 0.4,
+      "maxHealth": 100.0,
+      "speed": 4.2,
+      "turnRateDegreesPerSecond": 48.0,
+      "turnRateJitter": 13.0,
+      "turnRateJitterInterval": 1.1,
+      "collisionDamage": 0.0,
+      "missingHealthToBonusPercentPerPoint": 0.9,
+      "hasteMultiplier": 1.7,
+      "hasteDuration": 1.2,
+      "abilities": [
+        {
+          "type": "LongRangeRectangleShot",
+          "name": "Piercing Lane",
+          "power": 4.0,
+          "baseCooldown": 1.5,
+          "randomJitter": 0.15,
+          "range": 0.0,
+          "projectileSpeed": 16.0,
+          "projectileLifetime": 2.4,
+          "projectileLength": 2.2,
+          "projectileWidth": 0.2,
+          "distanceDamageBonusPercentPerUnit": 150.0,
+          "projectileMaxDamageMultiplier": 10.0
+        }
+      ]
+    }
+  ]
+}
