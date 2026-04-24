@@ -1,4 +1,4 @@
-# Battle Simulator (Unity 2D)
+# Battle Simulator
 
 ## Resumen
 Battle Simulator es un juego 2D de combate automatico entre canicas dentro de una arena cerrada.
